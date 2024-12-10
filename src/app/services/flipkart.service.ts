@@ -7,7 +7,7 @@ import { Flipkart } from '../models/flipkart';
   providedIn: 'root'
 })
 export class FlipkartService {
-private baseurl="assets/flipkart.json";
+private baseurl="https://sheetdb.io/api/v1/tczl58cgrx53k";
   constructor(private http:HttpClient) { }
   getall():Observable<any[]>{
     return this.http.get<any[]>(`${this.baseurl}`)

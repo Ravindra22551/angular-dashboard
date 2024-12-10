@@ -4,13 +4,14 @@
             <th>id</th>
             <th>name</th>
             <th>email</th>
-            <th>password</th>
+            <th>src</th>
+            <th>alt</th>
             <tbody>
                 <tr *ngFor="let record of records">
                     <td>{{record.id}}</td>
                     <td>{{record.name}}</td>
                     <td>{{record.email}}</td>
-                    <td>{{record.password}}</td>
+                    <td><img [src]="record.src" [alt]="record.alt"></td>
                 </tr>
             </tbody>
         </tr>
